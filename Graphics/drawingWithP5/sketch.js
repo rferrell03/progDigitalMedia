@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(screenX, 953);
+  createCanvas(windowWidth, windowHeight);
 
 }
 
@@ -14,7 +14,7 @@ function draw() {
   text("Example 1", 19, 45);
   text("Example 2", 625, 45);
   text("Example 3", 1225, 45);
-  text("Example 4", 1600, 45);
+  text("Example 4", 19, 345);
 
   example1()
   example2()
@@ -79,16 +79,16 @@ function example3() {
 
 function example4() {
   fill("navy")
-  rect(1600, 65, 250, 250)
+  rect(100, 365, 250, 250) 
 
   stroke("white")
   strokeWeight(4)
   fill("green")
-  circle(1725, 185, 140)
+  circle(225, 485, 140)
   fill("red")
 
-  let x = 1724.5
-  let y = 185
+  let x = 224.5
+  let y = 485
   //Star
   beginShape()
   vertex(x + 25, y)
@@ -105,5 +105,4 @@ function example4() {
   endShape()
 
 }
-
 
