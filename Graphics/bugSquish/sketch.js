@@ -12,6 +12,7 @@ let lastTimeUpdate;
 let gameFinished = false;
 
 function preload() {
+  //testing
   bugSprite = loadImage("bug.png");
   bugSprite2 = loadImage("bug2.png");
   floor = loadImage("Floor.png");
