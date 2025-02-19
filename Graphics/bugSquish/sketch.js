@@ -12,10 +12,10 @@ let lastTimeUpdate;
 let gameFinished = false;
 
 function preload() {
-  bugSprite = loadImage("progDigitalMedia/Graphics/bugSquish/sprites/bug.png");
-  bugSprite2 = loadImage("progDigitalMedia/Graphics/bugSquish/sprites/bug2.png");
-  floor = loadImage("progDigitalMedia/Graphics/bugSquish/sprites/Floor.png");
-  splatter = loadImage("progDigitalMedia/Graphics/bugSquish/sprites/splatter.png");
+  bugSprite = loadImage("bug.png");
+  bugSprite2 = loadImage("bug2.png");
+  floor = loadImage("Floor.png");
+  splatter = loadImage("splatter.png");
 }
 function setup() {
   createCanvas(windowWidth, windowHeight);
