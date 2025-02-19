@@ -50,7 +50,7 @@ function midpoint(x1, y1, x2, y2) {
 function mouseDragged() {
   if (mouseX > 55) {
     circle(pmouseX, pmouseY, SIZE * 10)
-    if ((abs(pmouseX - prevX) > 25 || abs(pmouseY - prevY) > 25) && !newLine) {
+    if ((abs(pmouseX - prevX) > 20 || abs(pmouseY - prevY) > 20) && !newLine) {
       //All this midpoint calculation is so that if you want to drag your mouse really fast, it appears as a line instead of a line of circles!
 
       let mid = midpoint(prevX, prevY, pmouseX, pmouseY);
