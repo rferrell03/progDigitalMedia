@@ -157,7 +157,7 @@ class Bug {
 
   speedUp() {
     this.speed += random(0.3, 1);
-    random(0, 20) < 1 ? bugs.push(new Bug(random(width - bugSize), random(height - bugSize), pickRandomSprite())) : null;
+    random(0, 50) < 1 ? bugs.push(new Bug(random(width - bugSize), random(height - bugSize), pickRandomSprite())) : null;
   }
 
 
