@@ -12,9 +12,9 @@ let lastTimeUpdate;
 let gameFinished = false;
 
 function preload() {
-  bugSprite = loadImage("/sprites/bug.png");
-  bugSprite2 = loadImage("/sprites/bug2.png");
-  floor = loadImage("/sprites/floor.png");
+  bugSprite = loadImage("sprites/bug.png");
+  bugSprite2 = loadImage("sprites/bug2.png");
+  floor = loadImage("sprites/Floor.png");
   splatter = loadImage("sprites/splatter.png");
 }
 function setup() {
