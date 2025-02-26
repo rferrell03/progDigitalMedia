@@ -1,6 +1,5 @@
 let startContext, samples, buttons, sliders;
 
-// Audio Effects
 const rev = new Tone.Reverb(5).toDestination();
 const dist = new Tone.Distortion(0).connect(rev);
 const del = new Tone.FeedbackDelay(0, 0).connect(dist);
@@ -9,10 +8,11 @@ const bitCrusher = new Tone.BitCrusher(4).connect(del);
 
 function preload() {
   samples = new Tone.Players({
-    cat: "media/drums.wav",
-    clapping: "media/clapping.wav",
-    microwave: "media/microwave.wav",
-    dracula: "media/dracula.wav"
+    //i would have them in a media folder but github pages didnt like it
+    cat: "drums.wav",
+    clapping: "clapping.wav",
+    microwave: "microwave.wav",
+    dracula: "dracula.wav"
   }).connect(del);
 }
 
