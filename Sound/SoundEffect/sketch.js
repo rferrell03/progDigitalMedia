@@ -26,6 +26,7 @@ function draw() {
 }
 
 function mouseClicked() {
+  //github pages was doing some weird stuff here regarding audiocontext, so i asked chat to help fix audiocontext issues. tried a bunch of stuff lol
   if (!audioStarted) {
     Tone.start().then(() => {
       console.log("AudioContext started");
