@@ -29,27 +29,30 @@ function mousePressed() {
 }
 
 function playSound() {
-  const boomSynth = new Tone.MembraneSynth({
-    pitchDecay: 0.05,
-    octaves: 14,
-    oscillator: {
-      type: "sine"
-    },
-    envelope: {
-      attack: 0.001,
-      decay: 1.4,
-      sustain: 0.01,
-      release: 1.4,
-    }
+  // Ensure the AudioContext is resumed
+  Tone.start().then(() => {
+    const boomSynth = new Tone.MembraneSynth({
+      pitchDecay: 0.05,
+      octaves: 14,
+      oscillator: {
+        type: "sine"
+      },
+      envelope: {
+        attack: 0.001,
+        decay: 1.4,
+        sustain: 0.01,
+        release: 1.4,
+      }
+    });
+
+    const reverb = new Tone.Reverb({
+      decay: 2,
+      preDelay: 0.01
+    }).toDestination();
+
+    boomSynth.connect(reverb);
+    boomSynth.triggerAttackRelease("C1", "2");
+  }).catch((e) => {
+    console.error("AudioContext error:", e);
   });
-
-
-  const reverb = new Tone.Reverb({
-    decay: 2,
-    preDelay: 0.01
-  }).toDestination();
-
-
-  boomSynth.connect(reverb);
-  boomSynth.triggerAttackRelease("C1", "2");
 }
