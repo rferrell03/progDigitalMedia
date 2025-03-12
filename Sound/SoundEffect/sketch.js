@@ -9,7 +9,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth - 100, windowHeight - 100);
 }
 
 function draw() {
@@ -25,7 +25,7 @@ function draw() {
   }
 }
 
-function mousePressed() {
+function mouseClicked() {
   if (!audioStarted) {
     Tone.start().then(() => {
       console.log("AudioContext started");
