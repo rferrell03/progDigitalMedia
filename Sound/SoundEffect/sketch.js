@@ -1,6 +1,8 @@
 let explosion;
 let explosions = [];
 let explosionDuration = 890; //gif duration
+let audioStarted = false;
+
 
 function preload() {
   explosion = loadImage('explosion.gif');
@@ -24,6 +26,14 @@ function draw() {
 }
 
 function mousePressed() {
+  if (!audioStarted) {
+    Tone.start().then(() => {
+      console.log("AudioContext started");
+      audioStarted = true; // Now we can play audio freely
+    }).catch((e) => {
+      console.error("Failed to start AudioContext:", e);
+    });
+  }
   explosions.push({ x: mouseX - 100, y: mouseY - 141, startTime: millis() });
   playSound();
 }
