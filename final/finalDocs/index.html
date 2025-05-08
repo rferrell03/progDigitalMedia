@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Documentation Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #fff;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.2em;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .placeholder {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            border: 2px dashed #dee2e6;
+            color: #6c757d;
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .placeholder iframe {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .media-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .media-item {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            width: 100%;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .media-item img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Project Documentation</h1>
+        <p class="subtitle">A comprehensive overview of my project</p>
+    </header>
+
+    <section id="project-outline">
+        <h2>Project Outline</h2>
+        <div class="placeholder">
+            This is a p5js project with an arduino providing serial communication as input.
+            The player controlls a spaceship with a joystick, and shoots lasers at the enemy with a button. 
+            Dodge the enemy laser by watching for the LED's on the arduino to flash!
+        </div>
+    </section>
+
+    <section id="narrative">
+        <h2>Narrative Description</h2>
+        <div class="placeholder">
+            For this project, I generally wanted to make a simple game. I wanted to make a game that was easy to understand and play, which is why I made a game similar to asteroids.
+            The game is as simple as it gets, you control a spaceship and you have to dodge the tracking laser.
+
+            Originally, I had a "balance" mechanic, where the player had to tilt a potentiometer to balance the spaceship, but due to the potentiometer being low quality, it ended up not being fun.
+            So, I removed the balance mechanic and just made the game easier. I wanted to iterate more with the game, but unfortunately I ran out of time.
+        </div>
+    </section>
+
+    <section id="project-images">
+        <h2>Project Images</h2>
+        <div class="media-container">
+            <div class="media-item">
+                <img src="projectImages/image1.png" alt="Project Screenshot 1">
+            </div>
+            <div class="media-item">
+                <img src="projectImages/image2.png" alt="Project Screenshot 2">
+            </div>
+            <div class="media-item">
+                <img src="projectImages/image3.jpg" alt="Project Screenshot 3">
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="video-demo">
+        <h2>Video Demonstration</h2>
+        <div class="placeholder">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TLyCIXxU6JM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+
+
+    <section id="future-development">
+        <h2>Future Development</h2>
+        <div class="placeholder">
+            Immediate features I would like to add(if I had more time):<br>
+            - Power ups<br>
+            - Asteroids split on break<br>
+            - Better UI<br>
+            - Sound Track in background<br>
+
+            
+        </div>
+    </section>
+</body>
+</html>
